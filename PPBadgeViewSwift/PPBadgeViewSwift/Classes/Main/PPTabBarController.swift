@@ -23,7 +23,7 @@ class PPTabBarController: UITabBarController {
         setupChildController(controller: controller3, title: "充值", image: "top_up", selectedImage: "top_up_1")
         setupChildController(controller: controller4, title: "我的", image: "my", selectedImage: "my_1")
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.darkGray], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.darkGray], for: .selected)
         
         /*
          给UITabBarItem添加badge

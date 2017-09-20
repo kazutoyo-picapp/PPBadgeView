@@ -58,7 +58,7 @@ open class PPBadgeLabel: UILabel {
     }
     
     private func widthForString(string: String, font:UIFont, height: CGFloat) -> CGFloat {
-        let attributes : [String: AnyObject] = [NSFontAttributeName: font]
+        let attributes : [NSAttributedStringKey: AnyObject] = [NSAttributedStringKey.font: font]
         let options = NSStringDrawingOptions.usesLineFragmentOrigin.rawValue | NSStringDrawingOptions.usesFontLeading.rawValue
         let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: height)
         let rect = (string as NSString).boundingRect(with: size, options: NSStringDrawingOptions(rawValue: options), attributes: attributes, context: nil)
